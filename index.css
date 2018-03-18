@@ -1,0 +1,61 @@
+html {
+  margin: 0 auto;
+  max-width: 60em;
+  min-width: 20em;
+}
+body,
+footer {
+  display: grid;
+  grid-auto-rows: minmax(25px, auto);
+  padding: 0 2em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.author {
+  justify-self: end;
+}
+
+h1,
+h2 {
+  align-self: center;
+  justify-self: center;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 0.25em 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+}
+
+img {
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+.img-text {
+  justify-self: end;
+}
+
+.bio {
+  justify-self: center;
+  max-width: 40em;
+  list-style: disc;
+}
+
+.bio-event {
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  padding: 0.25em 0.5em;
+}
+
+.bio-event-importantDate {
+  font-weight: 700;
+}
