@@ -7,7 +7,7 @@ body,
 footer {
   display: grid;
   grid-auto-rows: minmax(25px, auto);
-  padding: 0 2em;
+  padding: 0 0 2em 0;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -15,47 +15,81 @@ footer {
   justify-self: end;
 }
 
-h1,
-h2 {
-  align-self: center;
-  justify-self: center;
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 h1 {
   font-size: 3em;
-  padding: 0.25em 0;
+  margin: 1rem 0;
 }
 
 h2 {
   font-size: 2em;
+  margin: 1rem 0;
+}
+
+h3 {
+  justify-self: left;
+  padding: 0.75em 0;
+  font-size: 1.5em;
 }
 
 hr {
+  margin: 0;
   width: 100%;
-  height: 1px;
+  border: 0;
+  height: 2px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 img {
   width: 100%;
-  padding: 0.5em 0;
 }
 
 .img-text {
   justify-self: end;
+  line-height: initial;
+  padding: 1em 0;
 }
 
 .bio {
   justify-self: center;
-  max-width: 40em;
+  max-width: 50em;
   list-style: disc;
-}
-
-.bio-event {
-  display: grid;
-  grid-template-columns: 3em 1fr;
-  padding: 0.25em 0.5em;
+  border-spacing: 0.75em 1em;
+  border-collapse: separate;
 }
 
 .bio-event-importantDate {
   font-weight: 700;
+}
+
+.quote {
+  justify-self: center;
+  padding: 4rem 20% 4rem 20%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.quote-text {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.quote-author {
+  font-weight: 500;
+  font-size: 1.25em;
+  align-self: flex-end;
+  padding: 0.5em 4em;
+}
+
+.closing-statement {
+  font-size: inherit;
+  padding: 1em 0;
+  justify-self: center;
 }
